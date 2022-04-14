@@ -4,9 +4,9 @@ var ageOne = 25,
 function ageRangeIsAllowed(ageOne, ageTwo) {
   var ageDiference = Math.abs(ageOne - ageTwo);
   if (ageDiference >= 1 && ageDiference <= 5) {
-    return console.log(true);
+    return true;
   } else {
-    return console.log(false);
+    return false;
   }
 }
 
