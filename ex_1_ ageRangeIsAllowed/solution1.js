@@ -3,7 +3,7 @@ var ageOne = 25,
 
 function ageRangeIsAllowed(ageOne, ageTwo) {
   var ageDiference = Math.abs(ageOne - ageTwo);
-  if (ageDiference >= 1 && ageDiference <= 5 || ageOne == ageTwo) {
+  if (ageDiference <= 5 || ageOne == ageTwo) {
     return true;
   } else {
     return false;
