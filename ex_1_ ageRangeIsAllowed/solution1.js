@@ -2,11 +2,10 @@ var ageOne = 25,
   ageTwo = 29;
 
 function ageRangeIsAllowed(ageOne, ageTwo) {
-  var ageDiference = Math.abs(ageOne - ageTwo);
-  if (ageDiference <= 5 || ageOne == ageTwo) {
-    return true;
-  } else {
-    return false;
+  if(Math.abs(ageOne - ageTwo <=5)){
+    return true
+  }else{
+    return false
   }
 }
 
