@@ -1,7 +1,7 @@
 var gateOne = true, gateTwo = true;
 
  function logicAND(gateOne, gateTwo){
-   return gateOne == true && gateTwo == true; 
+   return gateOne == gateTwo; 
  }
 
 logicAND(gateOne, gateTwo);
