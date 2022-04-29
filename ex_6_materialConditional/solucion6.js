@@ -3,5 +3,5 @@ var argOne = true,
 materialConditional(argOne, argTwo);
 
 function materialConditional(argOne, argTwo) {
-  return argOne ? argTwo : true;
+  return !argOne || argTwo;
 }
