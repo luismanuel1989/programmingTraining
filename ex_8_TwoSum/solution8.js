@@ -11,7 +11,6 @@ function sumTwo(target, nums) {
                 }
             }
         }
-        j = 0, i = 0;
     }
 
     return result
