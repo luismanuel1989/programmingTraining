@@ -2,17 +2,16 @@ var target = 9, nums = [2, 7, 11, 15];
 sumTwo(target, nums);
 
 function sumTwo(target, nums) {
-    var result = [];
-    for (var i = 0; i < nums.length; i++) {
-        for (var j = 0; j < nums.length; j++) {
+    var result = [], i, j;
+    for (i = 0; i < nums.length; i++) {
+        for (j = 0; j < nums.length; j++) {
             if (j !== i) {
                 if (nums[i] + nums[j] == target) {
-                    result.push(i, j);
-                    nums.splice(i, 1)
-                    nums.splice(j, 1)
+                    if (!result.includes(i) && !result.includes(j)) result.push(i, j)
                 }
             }
         }
+        j = 0, i = 0;
     }
 
     return result
